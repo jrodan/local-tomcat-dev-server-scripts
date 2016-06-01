@@ -48,7 +48,7 @@ case "$OPTION" in
                 check
                 ;;
         10|smtp)
-                startSmtpServer "$JR_SCRIPTS_BASE"
+                java -jar "$JR_SCRIPTS_BASE"/lib/fakeSMTP-2.0.jar -m -p 9105 > /dev/null 2>&1 &
                 ;;
         *)
                 cat "$JR_SCRIPTS_BASE/src/info.txt"
