@@ -1,0 +1,16 @@
+#
+# please use one of the following functions:
+
+1 | start - start the server 
+2 | stop - stop the server
+3 | clean - clean the temp and work folder of the server 
+4 | ext-clean - clean the ext artifacts from the server
+5 | ext-deploy - build the ext plugin with maven and copies the lib to the correct folder
+6 | start-debug - start the server in debug mode 
+7 | less - open the server logfile in a new sublime tab
+8 | pwd - list available environments
+9 | status - show the server status
+10 | stmp - start smtp server
+
+# call like: tomcat [ENV] [PARAMETER]
+#
