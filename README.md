@@ -15,3 +15,7 @@ These scripts are optimized to use with Liferay and tomcat but individual custom
 
 1. use an environment with `tomcat ENVIRONMENT COMMAND`
 2. leave the `COMMAND` empty if you want to display all available commands
+
+## Currently available commands
+
+See [info.txt](https://github.com/jrodan/local-tomcat-dev-server-scripts/blob/master/src/info.txt "info.txt")
