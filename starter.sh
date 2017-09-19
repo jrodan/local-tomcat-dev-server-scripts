@@ -9,8 +9,20 @@ PWD=`pwd`
 if [ $# == 2 ] ; then
         OPTION=$2
         PROJECT=$1
+else 
+        echo "loading default environment and trying to handle the tomcat by finding it depending on the current folder"
+        # check if global autodetect function will be used
+        ## DXP only
+        ## if the script will be started from a dxp-workspace folder, it searches for the correct params
+
+        # load default
+        . $JR_SCRIPTS_BASE/env/default.sh "$JR_SCRIPTS_BASE"
+
+        OPTION=$1
+        PROJECT="default"
 fi
 
+# start the correct script
 case "$OPTION" in
         1|start)
                 echo "starting tomcat"
